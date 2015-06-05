@@ -6,23 +6,49 @@ $(document).ready(function() {
 
 	// });
 
-swal({ 
+swal ({ 
 	title: "Welcome to Number One Chatroom!",   
 	text: "Type a username below. Make it good.",   
 	type: "input",   
 	showCancelButton: true,   
 	closeOnConfirm: false,   
 	animation: "slide-from-top",   
-	inputPlaceholder: "CheetohLord" 
+	inputPlaceholder: "CheetohLord", 
+	imageURL: "http://graphics8.nytimes.com/images/2012/10/20/health/20well-cheeto2/20well-cheeto2-tmagArticle.jpg"
 	}, 
-	function(inputValue){ 
-	  	if (inputValue === false) 
+	function(name){ 
+	  	if (name === false) 
 		return false;      
-		if (inputValue === "") {     
+		if (name === "") {     
 			swal.showInputError("You need to write something!");     
-			return false   }      
-			swal("Well, alright...", "Your amazing username is: " + inputValue, "success"); });
+			return false   }
+			swal("Well, alright...", "Your amazing username is: " + name, "success"); });
+		
+//username.name
+
+//   $.post("https://the-living-room.herokuapp.com/login", {
+// 		user: "name",
+// 		chatroom: "The Living Room",
+// 		message: " ", /* username */
+// 		} );
+	
+// });
+
+function apple(){$.get('https://the-living-room.herokuapp.com/messages', function(z)
+		{
+        	
+        	for(var p = 0;p<z.length;p++){$('#displayWindow').append(z[p].user + ":" + z[p].message + "<br/>");
+    		}
+        	$('#displayWindow').scrollTop($('#displayWindow')[0].scrollHeight);
+        });
+}
+		
+	apple();
+	
 
 
 
-});
+
+
+
+}); //very end

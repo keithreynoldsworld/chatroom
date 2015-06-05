@@ -1,6 +1,11 @@
+/*body {
+	background-image: "http://hd.wallpaperswide.com/thumbs/light_blue_background_ii-t2.jpg";
+}
+*/
 #displayWindow {
 	border: solid black 2px;
-	height:30em;																					
+	height:30em;
+	overflow: scroll;
 	/*width:34em;
 	margin-left: 2em;*/
 
@@ -27,6 +32,3 @@
 	margin-left: .5em;
 }
 
-#textInput{
-    display:none;
-}
