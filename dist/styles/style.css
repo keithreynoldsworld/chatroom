@@ -1,0 +1,28 @@
+#displayWindow {
+	border: solid black 2px;
+	height:30em;																					
+	/*width:34em;
+	margin-left: 2em;*/
+
+}
+
+#stats { /* why won't this float right?!*/
+	float:right;
+	border: solid black 2px;
+	height: 27em;
+	margin-top: -20px;
+
+}
+
+
+#userInputBox {
+	clear:both;
+	border: solid black 2px;
+	height: 5em;
+	padding-top: 1em;
+}
+
+#messageBox {
+	width: 90%;
+	margin-left: .5em;
+}

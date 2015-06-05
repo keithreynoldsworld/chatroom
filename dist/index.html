@@ -9,33 +9,34 @@
 <h2><center>The Living Room</center></h2>
 
 	
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row" id="displayWindow">
-	        <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">displaywindow 
+	        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	        	<div id="chatBlurbs">
+	        	User1: stupid stuff in latin <br>
+	        	User2: heh. latin. 
+	        	</div>
 	        </div>    
-	    </div>
-	    <div class="row" id="stats">
-	    	<div class="col-xs-12 col-sm-2 col-md-4 col-lg-4">	
-	    		Stats stuff here
+	    
+	    	<div id="stats-container" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">	
+	    		<div id="stats">
+	    		Stats stuff here 
+	    		</div>
 	    	</div>
 	    </div>
-	</div>	 
+	</div>
 
 	<div class="container">
-		<p>Message:</p>
-		<div class="row" id="textInput">
-	        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
-	        	
 
-	    		<form id="sendMessage">
-	    		
-	        	</form>
+		<div class="row" id="userInputBox">	 
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				Message:<input type="text" id="messageBox" placeholder= "Type stuff here...">          		
+				</input>
+			</div>
+		</div>
+	</div>
+	
 
-
-    <div id="container">
-    	<input type="text" id="messageBox" placeholder= "Type stuff here..." maxlength = '100'>
-	    	
-	     </input>
 	    
 
     
@@ -44,6 +45,7 @@
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>
 </body>
 </html>
