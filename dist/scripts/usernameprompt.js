@@ -11,14 +11,17 @@ swal({
 	text: "Type a username below. Make it good.",   
 	type: "input",   
 	showCancelButton: true,   
-	closeOnConfirm: true,   
+	closeOnConfirm: false,   
 	animation: "slide-from-top",   
-	inputPlaceholder: "CheetohLord" }, 
-	function(inputValue){   if (inputValue === false) 
-		return false;      if (inputValue === "") {     
+	inputPlaceholder: "CheetohLord" 
+	}, 
+	function(inputValue){ 
+	  	if (inputValue === false) 
+		return false;      
+		if (inputValue === "") {     
 			swal.showInputError("You need to write something!");     
 			return false   }      
-			swal(+ inputValue, "? that's a stupid name, but alright."); });
+			swal("Well, alright...", "Your amazing username is: " + inputValue, "success"); });
 
 
 
