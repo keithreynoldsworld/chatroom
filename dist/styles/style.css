@@ -1,34 +1,48 @@
-/*body {
-	background-image: "http://hd.wallpaperswide.com/thumbs/light_blue_background_ii-t2.jpg";
+body {
+	background: url("http://animal-backgrounds.com/files/Black%20Cat/desktop-black-cat-wallpaper.jpg");
+	cursor:url(dist/nat924.cur),auto; 
 }
-*/
+
+h2, h4 {
+	text-align: center;
+    color: #D0F8FF;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+}
+
+
 #displayWindow {
-	border: solid black 2px;
+	border: solid white 1px;
 	height:30em;
 	overflow: scroll;
-	/*width:34em;
-	margin-left: 2em;*/
+	color: white;
+	
+	
 
 }
 
-#stats { /* why won't this float right?!*/
+#stats { 
+	background-color: black;
 	float:right;
-	border: solid black 2px;
-	height: 27em;
-	margin-top: -20px;
+	border: solid white 2px;
+	height: 30em;
+	
 
 }
 
 
 #userInputBox {
 	clear:both;
-	border: solid black 2px;
+	border: solid white 2px;
 	height: 5em;
 	padding-top: 1em;
+	color:white;
 }
 
 #messageBox {
 	width: 90%;
 	margin-left: .5em;
+	float:right;
 }
 
