@@ -1,14 +1,9 @@
 $(document).ready(function() {
 
-	// $("#messageBox").click (function signIn() {
-	// 	 alert("In order to participate in the chat you must type in a user name:");
-	// 	 var textInput = prompt	
-
-	// });
-
+//prompt for username upon page load
 swal ({ 
-	title: "Welcome to Number One Chatroom!",   
-	text: "Type a username below. Make it good.",   
+	title: "Welcome to the Cat Chat experience.",   
+	text: "Type a cat-related username below:",   
 	type: "input",   
 	showCancelButton: true,   
 	closeOnConfirm: false,   
@@ -24,31 +19,51 @@ swal ({
 			return false   }
 			swal("Well, alright...", "Your amazing username is: " + name, "success"); });
 		
-//username.name
 
-//   $.post("https://the-living-room.herokuapp.com/login", {
-// 		user: "name",
-// 		chatroom: "The Living Room",
-// 		message: " ", /* username */
-// 		} );
+
+
+//populate window with user's input on submit button click
+	$("#messageBox").keydown(function(event) {
+		if(event.keyCode==13) {
+			$(".btn").trigger("click");
+		}
 	
-// });
 
-function apple(){$.get('https://the-living-room.herokuapp.com/messages', function(z)
-		{
-        	
-        	for(var p = 0;p<z.length;p++){$('#displayWindow').append(z[p].user + ":" + z[p].message + "<br/>");
-    		}
-        	$('#displayWindow').scrollTop($('#displayWindow')[0].scrollHeight);
-        });
-}
+	$('.btn').click(fruit);
+
+		function fruit(event){
+
+	        event.preventDefault();
+
+	        console.log($('#messageBox').val());
+
+	        $.post('https://cat-chat-1.herokuapp.com/messages', 
+	        	{message: $('#messageBox').val(), 
+	        	user: name, chatroom: "The Living Room"}, apple);
+
 		
-	apple();
+
+		$('#messageBox').val(" ");
+		}
+
+
+
+	function apple(){$.get('https://cat-chat-1.herokuapp.com/messages', 
+		function(z)
+			{
+	        	for(var p = 0;p<z.length;p++)
+	        		{$('#displayWindow').append(z[p].user + ":" + z[p].message + "<br/>");
+	    		}
+	        	$('#displayWindow').scrollTop($('#displayWindow')[0].scrollHeight);
+	        });
+	}
+			
+		apple();
 	
 
 
 
 
-
+  });
 
 }); //very end
