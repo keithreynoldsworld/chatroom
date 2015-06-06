@@ -7,7 +7,7 @@ matthew = {};
 	// });
 
 swal ({ 
-	title: "Welcome to Number One Chatroom!",   
+	title: "Welcome to Cat Chat!",   
 	text: "Type a username below. Make it good.",   
 	type: "input",   
 	showCancelButton: true,   
@@ -27,15 +27,6 @@ swal ({
 			return false   }
 			swal("Well, alright...", "Your amazing username is: " + name, "success"); });
 		
-//username.name
-
-//   $.post("https://the-living-room.herokuapp.com/login", {
-// 		user: "name",
-// 		chatroom: "The Living Room",
-// 		message: " ", /* username */
-// 		} );
-	
-// });
 
 
 function apple(){console.log(matthew.nombre);$.get('https://cat-chat-1.herokuapp.com/messages', function(z)
@@ -67,14 +58,14 @@ function keith(){
 		var rau = data.recentlyActiveUsers;
 
 
-		$('#stats').append("<div class='stats'>Most Popular Chatroom</div><br/>"+mpc+
-						"<br/><br/><div class='stats'>Top Ten Users</div><br/>");
+		$('#mostPopularChatroom').append("<div class='mostPopularChatroom'>Most Popular Chatroom</div><br/>"+mpc+
+						"<br/><br/><div class='mostPopularChatroom'>Top Ten Users</div><br/>");
 
 		for(var m=0;m<ttu.length;m++){
-		$('#stats').append(ttu[m].user+"<br/>");					 
+		$('#topTenUsers').append(ttu[m].user+"<br/>");					 
 		}	
 
-		$('#stats').append("<br/>Recently Active Users<br/><br/>");
+		$('#recentlyActiveUsers').append("<br/>Recently Active Users<br/><br/>");
 
 		for(var i=0;i<rau.length;i++){
 		$('#stats').append(rau[i]+"<br/>");
@@ -101,6 +92,28 @@ talky();
 
 
 
+$("#chatOne").click(function(){
+    $("#chat1").show();
+    $("#chat2").hide();
+    $("#chat3").hide();
+
+});
+
+$("#chatTwo").click(function() {
+	$("#chat1").hide();
+	$("#chat3").hide();
+	$("#chat2").hide();
+});
+
+$("#chatThree").click(function() {
+	$("#chat1").hide();
+	$("#chat2").hide();
+	$("#chat3").show();
+});
+
+
+
 
 
 }); //very end
+

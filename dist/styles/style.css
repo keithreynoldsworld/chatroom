@@ -1,6 +1,6 @@
 body {
 	background: url("http://animal-backgrounds.com/files/Black%20Cat/desktop-black-cat-wallpaper.jpg");
-	cursor:url(dist/nat924.cur),auto; 
+	/*cursor:url(dist/nat924.cur),auto; */
 }
 
 h2 {
@@ -17,6 +17,10 @@ h2 {
              0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
              0 0 40px #A5F1FF;
 }
+.nav nav-tabs {
+	color:white;
+	background-color: blue;	
+}
 
 
 #displayWindow {
@@ -24,7 +28,7 @@ h2 {
 	height:30em;
 	overflow: scroll;
 	color: white;
-	
+	/*padding-bottom:50px;*/
 	
 
 }
@@ -34,13 +38,15 @@ h2 {
 	float:right;
 	border: solid white 2px;
 	height: 30em;
+	color: white;
+	overflow: scroll;
 	
 
 }
 
 
 #userInputBox {
-	glyphicon glyphicon-glass
+	
 	clear:both;
 	border: solid white 1px;
 	height: 5em;
@@ -80,7 +86,7 @@ h2 {
 	  text-decoration: none;
 	}
 
-	.btn:hover {
+	#fred:hover {
 	  background: #3cfc59;
 	  background-image: -webkit-linear-gradient(top, #3cfc59, #3498db);
 	  background-image: -moz-linear-gradient(top, #3cfc59, #3498db);
@@ -88,5 +94,32 @@ h2 {
 	  background-image: -o-linear-gradient(top, #3cfc59, #3498db);
 	  background-image: linear-gradient(to bottom, #3cfc59, #3498db);
 	  text-decoration: none;
+}
+
+#mostPopularChatroom {
+	border:solid white 1px;
+}
+#topTenUsers {
+	border: solid white 1px;
+}
+
+#recentlyActiveUsers {
+	border: solid white 1px;
+}
+
+
+#chat2 {
+	display:none;
+}
+
+#chat3 {
+	display:none;
+}
+p {
+	color:white;
+}
+
+ul {
+	color: white;
 }
 
