@@ -8,8 +8,16 @@
 </head>
 <body>
 
+<audio src="" class="speech" hidden></audio>
+
 <h2>Cat Chat</h2>
 <h4> All the cats, all the time.</h4>
+
+	<ul class="nav nav-tabs">
+	  <li role="presentation" class="active"><a href="#">Chat1</a></li>
+	  <li role="presentation"><a href="#">Chat2</a></li>
+	  <li role="presentation"><a href="#">Chat3</a></li>
+	</ul>
 
 	<div class="container">
 		
@@ -22,15 +30,17 @@
  	</div>	 	 
 
 	<div class="container">
+		<form>
+				<div class="row">	 
+					<div id="userInputBox" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					
+						<input type="text" id="messageBox" placeholder= "Type stuff here..."> </input>
 
-		<div class="row">	 
-			<div id="userInputBox" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			
-				<input type="text" id="messageBox" placeholder= "Type stuff here..."> </input>
-				<button class="btn">Submit</button>
-			</div>	
-		</div>
-	 
+						<button id="fred">Submit</button>
+
+					</div>	
+				</div>
+		 </form>
 
 
 

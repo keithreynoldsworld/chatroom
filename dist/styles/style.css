@@ -40,6 +40,7 @@ h2 {
 
 
 #userInputBox {
+	glyphicon glyphicon-glass
 	clear:both;
 	border: solid white 1px;
 	height: 5em;
@@ -59,7 +60,7 @@ h2 {
 	margin-top: .3em;
 }
 
-.btn {
+#fred {
 	margin-right: 3em;
 	float:right;
 	background: #2bc1cc;
